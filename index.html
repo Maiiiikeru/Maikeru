@@ -1,1 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maikeru Learning Hub — a simple school project and informational website.">
+  <title>Maikeru | Learning Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Analytics 4: Measurement ID supplied by the site owner -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM0KS4E6DS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CM0KS4E6DS');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Maikeru home"><span class="brand-mark">M</span><span>maikeru<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#resources">Resources</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#resources" data-analytics="header_explore_click">Explore resources <span>↗</span></a>
+  </header>
 
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A STUDENT-LED INFORMATION HUB</div>
+        <h1>Learn something<br><span>new every day.</span></h1>
+        <p class="hero-description">A simple space to explore ideas, find useful learning resources, and keep curiosity moving forward.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#resources" data-analytics="hero_browse_resources">Browse resources <span>→</span></a>
+          <a class="text-link" href="#about" data-analytics="hero_learn_more">Learn about this project <span>↗</span></a>
+        </div>
+        <div class="hero-proof"><div class="avatar-stack"><span>✦</span><span>✎</span><span>⌘</span></div><p><strong>Built for curious minds</strong><br><small>Learn at your own pace.</small></p></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of books and learning">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card card-back"><span class="mini-label">STAY CURIOUS</span><div class="scribble">Ideas<br>become<br><em>impact.</em></div><span class="star">✳</span></div>
+        <div class="art-card card-front"><div class="book-icon">✦</div><span class="mini-label">YOUR NEXT CHAPTER</span><h2>Start<br>exploring.</h2><div class="progress-line"><span></span></div><div class="card-foot"><span>LEARNING MODE</span><span>ON ↗</span></div></div>
+        <div class="floating-note note-top">✦ Keep growing</div><div class="floating-note note-bottom">01 / Begin anywhere</div>
+      </div>
+      <div class="hero-bottom"><span>INQUIRY · CREATIVITY · GROWTH</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="intro-band">
+      <div class="section-wrap intro-grid"><p class="section-kicker">WHY MAIKERU?</p><p class="intro-statement">Learning doesn't have to feel complicated. <span>Start with one question, explore a new idea, and build your knowledge step by step.</span></p></div>
+    </section>
+
+    <section class="content-section section-wrap" id="about">
+      <div class="section-heading"><div><p class="section-kicker">01 — ABOUT THE PROJECT</p><h2>A little space<br>for big ideas.</h2></div><p class="section-side-copy">Maikeru is an informational website concept created as a school project. It brings helpful content and simple navigation together in one place.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-lilac"><div class="feature-icon">✳</div><span class="feature-number">01</span><h3>Stay curious</h3><p>Explore topics, ask questions, and discover different perspectives.</p><a href="#resources" data-analytics="feature_curiosity_click">Explore topics ↗</a></article>
+        <article class="feature-card feature-yellow"><div class="feature-icon">⌁</div><span class="feature-number">02</span><h3>Keep it simple</h3><p>Find information through a clear layout that is easy to browse.</p><a href="#resources" data-analytics="feature_simple_click">View resources ↗</a></article>
+        <article class="feature-card feature-green"><div class="feature-icon">↗</div><span class="feature-number">03</span><h3>Grow together</h3><p>Use what you learn to support your studies and share ideas.</p><a href="#contact" data-analytics="feature_connect_click">Get in touch ↗</a></article>
+      </div>
+    </section>
+
+    <section class="resources-section" id="resources">
+      <div class="section-wrap">
+        <div class="section-heading resources-heading"><div><p class="section-kicker">02 — LEARNING RESOURCES</p><h2>Choose your<br>next rabbit hole.</h2></div><p class="section-side-copy">Select a topic to mark it as your current interest. This demo interaction also sends a custom event to Google Analytics.</p></div>
+        <div class="resource-grid">
+          <button class="resource-card" data-topic="technology"><span class="resource-top"><span class="resource-icon icon-blue">⌘</span><span class="resource-arrow">↗</span></span><span class="resource-tag">TECHNOLOGY</span><strong>Digital world</strong><span class="resource-description">Discover how digital tools shape the way we live and learn.</span><span class="resource-bottom">Explore topic <span>→</span></span></button>
+          <button class="resource-card" data-topic="study skills"><span class="resource-top"><span class="resource-icon icon-orange">✎</span><span class="resource-arrow">↗</span></span><span class="resource-tag">STUDY SKILLS</span><strong>Learn smarter</strong><span class="resource-description">Try practical ways to organize tasks and study effectively.</span><span class="resource-bottom">Explore topic <span>→</span></span></button>
+          <button class="resource-card" data-topic="creativity"><span class="resource-top"><span class="resource-icon icon-pink">✳</span><span class="resource-arrow">↗</span></span><span class="resource-tag">CREATIVITY</span><strong>Make ideas real</strong><span class="resource-description">Find inspiration for projects, problem-solving, and design.</span><span class="resource-bottom">Explore topic <span>→</span></span></button>
+        </div>
+        <p class="selection-message" id="selectionMessage" aria-live="polite">Pick a topic to get started.</p>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-panel"><div><p class="section-kicker">03 — KEEP IN TOUCH</p><h2>Good ideas start<br>with a conversation.</h2><p>Have a question or a suggestion for this student project? Send a message below.</p></div>
+        <form id="contactForm">
+          <label for="visitorName">Your name</label><input id="visitorName" name="name" type="text" placeholder="Enter your name" required>
+          <label for="visitorMessage">Your message</label><textarea id="visitorMessage" name="message" placeholder="What would you like to share?" rows="3" required></textarea>
+          <button class="button button-primary form-submit" type="submit">Send demo message <span>→</span></button>
+          <p class="form-note">Demo only: this form does not send or store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">M</span><span>maikeru<span class="brand-dot">.</span></span></a><p>Made for learning. Built with curiosity.</p><a href="#home" class="back-top">Back to top ↑</a><div class="footer-bottom"><span>© <span id="year"></span> Maikeru Learning Hub</span><span>STUDENT PROJECT · INFORMATIONAL WEBSITE</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
